@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MidTermProject"
+        tools:targetApi="31">
+        <activity
+            android:name=".Abs"
+            android:exported="false" />
+        <activity
+            android:name=".AbsWorkout"
+            android:exported="false" />
+        <activity
+            android:name=".MidlyActive"
+            android:exported="false" />
+        <activity
+            android:name=".FullbodyWorkout2"
+            android:exported="false" />
+        <activity
+            android:name=".veryActive"
+            android:exported="false" />
+        <activity
+            android:name=".mildlyActive"
+            android:exported="false" />
+        <activity
+            android:name=".ExerciseLevels"
+            android:exported="false" />
+        <activity
+            android:name=".Salad"
+            android:exported="false" />
+        <activity
+            android:name=".Salmon"
+            android:exported="false" />
+        <activity
+            android:name=".Steak"
+            android:exported="false" />
+        <activity
+            android:name=".Welcome"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".Signup"
+            android:exported="false" />
+        <activity
+            android:name=".OatMeal"
+            android:exported="false" />
+        <activity
+            android:name=".CanaiBread"
+            android:exported="false" />
+        <activity
+            android:name=".HoneyPancake"
+            android:exported="false" />
+        <activity
+            android:name=".Dinner"
+            android:exported="false" />
+        <activity
+            android:name=".Lunch"
+            android:exported="false" />
+        <activity
+            android:name=".BreakFast"
+            android:exported="false" />
+        <activity
+            android:name=".Squats"
+            android:exported="false" />
+        <activity
+            android:name=".finishExercise"
+            android:exported="false" />
+        <activity
+            android:name=".WaterBreak"
+            android:exported="false" />
+        <activity
+            android:name=".ArmRaises"
+            android:exported="false" />
+        <activity
+            android:name=".JumpingJacks"
+            android:exported="false" />
+        <activity
+            android:name=".SkippingRope"
+            android:exported="false" />
+        <activity
+            android:name=".warmUp"
+            android:exported="false" />
+        <activity
+            android:name=".MealPlanner"
+            android:exported="false" />
+        <activity
+            android:name=".LowerBodyWorkout"
+            android:exported="false" />
+        <activity
+            android:name=".FullBodyWorkout"
+            android:exported="false" />
+        <activity
+            android:name=".Activity7"
+            android:exported="false" />
+        <activity
+            android:name=".Activity6"
+            android:exported="false" />
+        <activity
+            android:name=".Activity5"
+            android:exported="false" />
+        <activity
+            android:name=".Activity4"
+            android:exported="false" />
+        <activity
+            android:name=".Activity3"
+            android:exported="false" />
+        <activity
+            android:name=".Activity2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

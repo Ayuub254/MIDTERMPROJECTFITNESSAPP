@@ -1,0 +1,34 @@
+package com.example.midtermproject;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.webkit.WebChromeClient;
+import android.webkit.WebView;
+import android.widget.Button;
+
+public class Salmon extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_salmon);
+
+        WebView webView = findViewById(R.id.webViewSalmon);
+        String salmonVideo = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/gqs2qb1IhNw?si=WfY287kQmc49W6ju\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>";
+        webView.loadData(salmonVideo,"text/html", "utf-8");
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.setWebChromeClient(new WebChromeClient());
+
+        Button buttonGoHome = findViewById(R.id.buttonGoHomeSalmon);
+        buttonGoHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Salmon.this, Lunch.class);
+                startActivity(intent);
+            }
+        });
+    }
+}
